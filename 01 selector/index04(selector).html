@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        /* a태그에 커서를 올리면 효과가 적용 */
+        .box > li > a:hover {color:red;}
+        /* 포커스 상태가 되면 효과가 적용 */
+        .abc:focus {
+            border: 3px solid red;
+            outline: none;
+        }
+        /* 클릭 할 때에 효과가 적용 */
+        .def:active {color:blue;}
+    </style>
+
+    <ul class="box">
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+    </ul>
+
+    <!-- focus 인풋태그에 사용 -->
+     <input type="text" class="abc">
+
+     <p class="def">active는 클릭할 때를 의미한다</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

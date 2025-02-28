@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .a{
+            text-align: center;
+            letter-spacing: 10px; /* 자간 : 글 사이사이의 간격, 음수 지정도 가능(더 좁아짐) */
+            text-decoration: overline; /* 글자 관련 속성들 */
+        }
+
+        .b {
+            /* 기준이 될 태그에 지정 */
+            /* vertical-align: bottom; 높이를 따로 지정을 안했으므로 달라진게 안보인다다 */
+            border: 1px solid #777;
+        }
+
+        .b img {
+            vertical-align: top;
+        }
+
+        .c {
+            border: 1px solid #777;
+            text-align: center;
+            
+            height: 100px;
+            line-height: 100px;
+            /* 높이와 줄간격을 동일하게 맞추면 수직가운데로 정렬된다다 */
+        }   
+    </style>
+
+
+</head>
+<body>
+    
+    <p class="a">hello world</p>
+
+    <p class="b">
+        <img src="b.jpg" alt="이미지">
+        hello world!
+    </p>
+
+    <!-- 기준이 되는 태그가 있으면 상관이 없지만 없을 수도 있다. -->
+    <!-- 한 줄 텍스트를 수직 가운데 정렬을 하고 싶다면 height와 line-height를 동일하게 맞춘다다 -->
+
+    <p class="c">
+        hello
+    </p>
+</body>
+</html>

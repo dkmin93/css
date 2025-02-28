@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        img {
+            display: inline-block;
+            background-color: black;
+            text-align: center;
+            height: 200px;
+            line-height: 200px;
+
+        }
+
+        .abox {
+            background-color: black;
+            text-align: center;
+        }
+
+        .bbox {
+            background-color: black;
+            text-align: right;
+        }
+
+        .bbox > ul {
+            display: inline;
+            text-align: center;
+            background-color: black;
+        }
+
+        .bbox > ul > li {
+            display: inline-block;
+            text-align: center;
+            height: 70px;
+            width: 70px;
+            line-height: 70px;
+        }
+
+        .bbox > ul > :hover {
+            background-color: rgb(219, 219, 219);
+        }
+
+
+        .bbox > ul > li > a {
+            text-align: center;
+            text-decoration: none;
+            display: inline;
+            
+            color: #fff;
+            font-size: 9px;
+           
+            
+        }
+      
+
+    </style>
+
+</head>
+<body>
+    <div class="abox">
+        <img src="img/css3.png" alt="css문짝">
+    </div>
+    <div class="bbox">
+        <ul>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+    </div>
+</body>
+</html>
