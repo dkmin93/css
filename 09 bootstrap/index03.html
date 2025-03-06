@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- 부트스트랩 css 파일 링크 -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+     <!-- 제이쿼리 -->
+     <script src="js/jquery-3.7.1.min.js"></script>
+ 
+     <!-- 부트스트랩 js 파일 링크 -->
+     <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    
+    <!-- 그리드 -->
+
+    <!-- container or container-fluid 클래스 안에 row 클래스를 정의하고 그 아래에 col클래스를 정의한다 -->
+
+    <!-- 태블릿 사이즈 이상에서는 4칸, 모바일 사이즈에서는 2칸 -->
+
+    <!-- 부트스트랩 그리드는 총 12칸을 제공하므로 4칸 배치를 하려면 전체 12칸을 4로 나누므로 3이된다. 태블릿 크기는 sm사이즈 므로 col-sm-3 -->
+    <!-- 2칸씩 배치를 하려면 전체 12칸을 2로 나누므로 6이된다 모바일 사이즈는 xs 이므로 col-xs-6 -->
+
+    <div class="container">
+       <div class="row">
+            <div class="col-sm-3 col-xs-6">가</div>
+            <div class="col-sm-3 col-xs-6">나</div>
+            <div class="col-sm-3 col-xs-6">다</div>
+            <div class="col-sm-3 col-xs-6">라</div>
+       </div>
+    </div>
+
+    <hr>
+
+    <!-- 웹환경에서는 6칸 태블릿 4칸 모바일 3칸 -->
+
+    <!-- 일정 크기만 사용할 경우 container 전체 너비를 사용할 경우 container-fluid -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-4">1</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">2</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">3</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">4</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">5</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">6</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">7</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">8</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">9</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">10</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">11</div>
+            <div class="col-md-2 col-sm-3 col-xs-4">12</div>
+        </div>
+    </div>
+
+</body>
+</html>

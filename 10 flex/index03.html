@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <style>
+
+        .box {background-color: aqua; padding: 10px;}
+        .box .item {background-color: pink; width: 50px; height: 50px;}
+
+        .container {
+           display: flex;
+           height: 300px;
+        }
+
+        /* grow 너비가 증가할 때의 성장비율 */
+        /* flex-basis는 박스의 기본 너비이다. width or heigh로 대체할 수 있다. */
+        /* order은 아이템의 순서를 지정할 수 있다. 음수도 가능 */
+        .item1 {flex-shrink: 1; flex-basis: 20%; order: 3;} 
+        .item2 {flex-shrink: 2; flex-basis: 30%; order: -1;}
+        .item3 {flex-shrink: 3; flex-basis: 50%; order: 2; align-self: center;}
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container box">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+
+</body>
+</html>

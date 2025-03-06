@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .box {background-color: aqua; padding: 10px;}
+        .box .item {background-color: pink; width: 50px;}
+
+        .container {
+            display: flex;
+            flex-direction: row;
+
+            /* 주축에 대한 정렬 방식이다 flex-direction의 값을 신경쓰기 flex-start가 기본값*/
+            justify-content: space-around;
+        }
+
+        .container2 {
+            display: flex;
+            height: 100px;
+
+            /* stretch가 기본값 item의 height가 교차축 방향으로 잡아당겨진다. */
+            align-items: baseline;
+            /* baseline의 경우 item의 글자위치를 기준으로 정렬된다 */   
+        }
+
+
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <h3>justify-content 주축 정렬</h3>
+
+    <div class="container box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h3>align items 한 줄 일 때의 교차축에 대한 정렬</h3>
+    
+
+    <div class="container2 box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h3>align-content 두 줄 이상일 때의 교차축에 대한 정렬</h3>
+
+    <style>
+        .container3 {
+            height: 300px;
+            display: flex;
+
+            flex-wrap:wrap; /* 두줄 이상일 경우 */
+            
+            /* stretch가 기본값이므로 교차축 방향으로 잡아당겨진다 */
+            align-content: space-around;
+        }
+    </style>
+
+    <div class="container3 box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+    </div>
+
+</body>
+</html>
